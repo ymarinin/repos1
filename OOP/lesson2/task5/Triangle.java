@@ -1,11 +1,27 @@
 public class Triangle extends Figure {
-    private double height, width;
+    private double height ;
+    private double width ;
 
-    public Triangle (double h, double w) {
+    Triangle () {
         name = "Triangle";
-        height = h;
-        width = w;
     }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
     @Override
     public double getSquare () {
         return height*width/2;

@@ -1,11 +1,27 @@
-public class Rectangle extends Figure {
-    private double height, width;
+public class Rectangle extends Triangle {
+    private double height;
+    private double width;
 
-    public Rectangle (double h, double w) {
+    Rectangle () {
         name = "Rectangle";
-        height = h;
-        width = w;
     }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
     @Override
     public double getSquare () {
         return width*height;

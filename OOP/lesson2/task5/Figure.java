@@ -1,6 +1,4 @@
-public abstract class Figure {
+abstract class Figure {
     protected String name;
-
-    public abstract double getSquare ();
-
+    public abstract double getSquare();
 }
