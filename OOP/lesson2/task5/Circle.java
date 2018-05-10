@@ -1,8 +1,9 @@
 public class Circle extends Rectangle {
     private double radius;
 
-    Circle () {
+    public Circle (double radius) {
         name = "Circle";
+        this.radius=radius;
     }
 
     public double getRadius() {

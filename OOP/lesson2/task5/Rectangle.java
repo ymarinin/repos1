@@ -2,8 +2,13 @@ public class Rectangle extends Triangle {
     private double height;
     private double width;
 
-    Rectangle () {
+    public Rectangle () {
+    }
+
+    public Rectangle (double height, double width) {
         name = "Rectangle";
+        this.height=height;
+        this.width=width;
     }
 
     public double getHeight() {
