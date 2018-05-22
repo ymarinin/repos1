@@ -2,9 +2,9 @@ public class Student extends Human {
     public String specialty;
     public String educationform;
 
-    Student (String name, String sex, String nationality, int age, String specialty, String educationform) {
+    Student (String name, String surname, String nationality, int age, String specialty, String educationform) {
         this.name=name;
-        this.sex=sex;
+        this.surname=surname;
         this.nationality=nationality;
         this.age=age;
         this.specialty=specialty;
@@ -29,6 +29,6 @@ public class Student extends Human {
 
     @Override
     public void printinfo ( ) {
-        System.out.println("Information: " + this.name + this.sex + this.nationality + this.age + this.specialty + this.educationform);
+        System.out.println("Имя: " + this.name+ "\n" + "Фамилия: " + this.surname + "\n" + "Национальность:" +  this.nationality + "\n" + "Возраст: " + this.age + "\n" + "Специальность: " +  this.specialty + "\n" + "Форма обучения: " + this.educationform + "\n");
     }
 }

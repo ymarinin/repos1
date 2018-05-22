@@ -1,6 +1,6 @@
 public class Human {
     protected String name;
-    protected String sex;
+    protected String surname;
     protected String nationality;
     protected int age;
 
@@ -8,7 +8,7 @@ public class Human {
 
     }
 
-    public Human (String name, String sex, String nationality, int age){
+    public Human (String name, String surname, String nationality, int age){
     }
 
     public String getName() {
@@ -19,12 +19,12 @@ public class Human {
         this.name=name;
     }
 
-    public String getSex () {
-        return sex;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSex () {
-        this.sex=sex;
+    public void setSurname () {
+        this.surname=surname;
     }
 
     public String getNationality() {
@@ -44,6 +44,6 @@ public class Human {
     }
 
     public void printinfo () {
-        System.out.println("Information :" + this.name + this.sex + this.nationality + this.age);
+        System.out.println("Information :" + this.name + this.surname + this.nationality + this.age);
     }
 }
