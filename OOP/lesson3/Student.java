@@ -1,6 +1,10 @@
 public class Student extends Human {
-    public String specialty;
-    public String educationform;
+    protected String specialty;
+    protected String educationform;
+
+    public Student () {
+
+    }
 
     Student (String name, String surname, String nationality, int age, String specialty, String educationform) {
         this.name=name;
