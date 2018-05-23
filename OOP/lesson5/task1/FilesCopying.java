@@ -6,21 +6,21 @@ import java.nio.file.Files;
 
 public class FilesCopying {
     public static void main(String[] args) {
-        File folder_out = new File("Out");
-        folder_out.mkdirs();
-        File folder_in = new File("In");
-        folder_in.mkdirs();
-        File[] fileListOut = folder_out.listFiles();
+        File folderOut = new File("Out");
+        folderOut.mkdirs();
+        File folderIn = new File("In");
+        folderIn.mkdirs();
+        File[] fileListOut = folderOut.listFiles();
 
         MyFileFilter mFF = new MyFileFilter();
-        File[] fileListSotr = folder_out.listFiles(mFF);
+        File[] fileListSotr = folderOut.listFiles(mFF);
         for (File file : fileListSotr) {
             System.out.println(file.getName());
         }
 
         for (File file : fileListSotr) {
             try {
-                Files.copy(file.toPath(), new File(folder_in + File.separator + file.getName()).toPath());
+                Files.copy(file.toPath(), new File(folderIn + File.separator + file.getName()).toPath());
             }
 
             catch (IOException e) {
