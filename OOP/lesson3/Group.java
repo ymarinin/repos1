@@ -31,15 +31,19 @@ public class Group {
         }
 
     public Student findSurname(String surname) {
-        for (int i = 0; i < list.length; i++) {
-            if (list[i].getSurname().equalsIgnoreCase(surname)) {
+        try {
+            for (int i = 0; i < list.length; i++) {
+                if (list[i].getSurname().equalsIgnoreCase(surname)) {
 //                System.out.println("Фамилия: " + list[i].getSurname() + " | " + "Имя: " + list[i].getName() + " | " + "Национальность: " + list[i].getNationality() + " | " + "Возраст: " + list[i].getAge() + " | " + "Специальность: " + list[i].getSpecialty() + " | " + "Форма обучения: " + list[i].getEducationform());
-                return list[i];
+                    return list[i];
+                }
             }
+        }catch (Exception e) {
+            System.out.println("Студент не найден.");
         }
-            System.out.println("Студент не найден");
-            return null;
-        }
+        return null;
+    }
+
 
     public void del (String surname) {
         Student d = this.findSurname(surname);
