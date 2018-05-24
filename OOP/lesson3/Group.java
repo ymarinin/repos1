@@ -66,15 +66,11 @@ public class Group {
     public void sortGroup ()  {
         for (int i = 0; i < list.length - 1; i++) {
             for (int j = i + 1; j < list.length; j++) {
-//                try {
                 if (list[i] != null && list[j] != null &&list[i].getSurname().compareTo(list[j].getSurname()) > 0 ) {
                     Student tmp = list[i];
                     list[i] = list[j];
                     list[j] = tmp;
                 }
-//                }
-//                catch (Exception e){
-//                }
             }
         }
     }
