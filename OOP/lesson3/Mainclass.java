@@ -10,7 +10,7 @@ public class Mainclass {
         gr.add(new Student("Ольга", "Аидорова", "Украина", 18, "IT", "очная"));
         gr.add(new Student("Ольга", "Дидорова", "Украина", 18, "IT", "очная"));
         gr.add(new Student("Ольга", "Бидорова", "Украина", 18, "IT", "очная"));
-       gr.add(new Student());
+        gr.add(new Student());
         System.out.println("Список группы студентов: \n");
         gr.getAllgroup();
         System.out.println("--------------------------------------");

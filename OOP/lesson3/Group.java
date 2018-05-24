@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Group {
     private Student[] list = new Student[10];
 
