@@ -1,6 +1,3 @@
-import sun.security.util.Length;
-
-import java.io.IOException;
 import java.util.Arrays;
 
 public class Group {
@@ -73,6 +70,19 @@ public class Group {
                 }
             }
         }
+    }
+
+    @Override
+    public String toString () {
+        StringBuilder sb = new StringBuilder();
+        sortGroup();
+        for (int i = 0; i < list.length; i++ ) {
+            if (list[i] != null) {
+                sb.append(list[i].surname + "\n");
+            }
+        }
+        System.out.println(sb.toString());
+        return sb.toString();
     }
   }
 

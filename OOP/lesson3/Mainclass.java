@@ -26,5 +26,6 @@ public class Mainclass {
         gr.sortGroup();
         System.out.println("Отсортированый по фамилии список группы студентов после удаления: \n");
         gr.getAllgroup();
+        gr.toString();
     }
 }
