@@ -31,24 +31,22 @@ public class Group {
         }
 
     public Student findSurname(String surname) {
-        try {
-            for (int i = 0; i < list.length; i++) {
-                if (list[i].getSurname().equalsIgnoreCase(surname)) {
+
+        for (int i = 0; i < list.length; i++) {
+                if (list[i] != null && list[i].getSurname().equalsIgnoreCase(surname)) {
 //                System.out.println("Фамилия: " + list[i].getSurname() + " | " + "Имя: " + list[i].getName() + " | " + "Национальность: " + list[i].getNationality() + " | " + "Возраст: " + list[i].getAge() + " | " + "Специальность: " + list[i].getSpecialty() + " | " + "Форма обучения: " + list[i].getEducationform());
-                    return list[i];
+                return list[i];
                 }
-            }
-        }catch (Exception e) {
-            System.out.println("Студент не найден.");
-        }
-        return null;
+           }
+           System.out.println("Студент не найден.");
+           return null;
     }
 
 
     public void del (String surname) {
         Student d = this.findSurname(surname);
         for (int i = 0; i < list.length; i++) {
-            if (list[i] == d) {
+            if (list[i] != null && list[i].equals(d)) {
                 list [i] = null;
             }
         }
@@ -68,15 +66,15 @@ public class Group {
     public void sortGroup ()  {
         for (int i = 0; i < list.length - 1; i++) {
             for (int j = i + 1; j < list.length; j++) {
-                try {
-                if (list[i].getSurname().compareTo(list[j].getSurname()) > 0 ) {
+//                try {
+                if (list[i] != null && list[j] != null &&list[i].getSurname().compareTo(list[j].getSurname()) > 0 ) {
                     Student tmp = list[i];
                     list[i] = list[j];
                     list[j] = tmp;
                 }
-                }
-                catch (Exception e){
-                }
+//                }
+//                catch (Exception e){
+//                }
             }
         }
     }
