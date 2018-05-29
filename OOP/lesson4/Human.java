@@ -3,13 +3,12 @@ public class Human {
     protected String surname;
     protected String nationality;
     protected int age;
-    protected String sex;
 
     public Human () {
 
     }
 
-    public Human (String name, String surname, String nationality, int age, String sex){
+    public Human (String name, String surname, String nationality, int age){
     }
 
     public String getName() {
@@ -32,7 +31,7 @@ public class Human {
         return nationality;
     }
 
-    public void setNationality (String nationality) {
+    public void setNationality ( String nationality) {
         this.nationality=nationality;
     }
 
@@ -44,15 +43,7 @@ public class Human {
         this.age=age;
     }
 
-    public String getSex () {
-        return sex;
-    }
-
-    public void setSex (String sex) {
-        this.sex=sex;
-    }
-
     public void printinfo () {
-        System.out.println("Information :" + this.name + this.surname + this.nationality + this.age + this.sex);
+        System.out.println("Information :" + this.name + this.surname + this.nationality + this.age);
     }
 }

@@ -1,6 +1,7 @@
 public class Student extends Human {
-    public String specialty;
-    public String educationform;
+    protected String sex;
+    protected String specialty;
+    protected String educationform;
 
     public Student () {
 
@@ -16,11 +17,19 @@ public class Student extends Human {
         this.educationform=educationform;
     }
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex ( String sex) {
+        this.sex=sex;
+    }
+
     public String getSpecialty() {
         return specialty;
     }
 
-    public void setSpecialty ( String specialty) {
+    public void setSpecialty (String specialty) {
         this.specialty=specialty;
     }
 
@@ -34,6 +43,6 @@ public class Student extends Human {
 
     @Override
     public void printinfo ( ) {
-        System.out.println("Имя: " + this.name+ "\n" + "Фамилия: " + this.surname + "\n" + "Национальность:" +  this.nationality + "\n" + "Возраст: " + this.age + "\n" + "Пол: " + this.sex + "\n" + "Специальность: " +  this.specialty + "\n" + "Форма обучения: " + this.educationform + "\n");
+        System.out.println("Имя: " + this.name+ "\n" + "Фамилия: " + this.surname + "\n" + "Национальность:" +  this.nationality + "\n" + "Возраст: " + this.age + "\n" + "Специальность: " +  this.specialty + "\n" + "Форма обучения: " + this.educationform + "\n");
     }
 }

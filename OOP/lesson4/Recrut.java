@@ -1,4 +1,3 @@
 public interface Recrut {
-    public void prizyv ();
-    }
-
+    public Student [] prizyv ();
+}
